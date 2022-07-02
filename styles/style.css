@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 959px) {
+  main {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 599px) {
+  main {
+    padding: 0 5px;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  gap: 25px 25px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #000;
+}
+.nav-list .nav-white {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+.nav-list .nav-white a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase;
+}
+.nav-list .nav-white a:hover {
+  border-bottom: 2px solid #ed743d;
+  transition: 0.25s;
+  color: #ed743d;
+}
+.nav-list .nav-bold {
+  font-family: "Montserrat", sans-serif;
+  color: #ed743d;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase;
+}
+.nav-list .nav-bold:hover {
+  border-bottom: 2px solid #fff;
+  transition: 0.25s;
+  color: #fff;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid #ed743d;
+  min-height: 400px;
+  align-items: center;
+}
+.project__card:hover {
+  border-color: #fff;
+}
+@media screen and (max-width: 959px) {
+  .project__card {
+    padding: 10px;
+  }
+}
+.project__card .project-title {
+  text-align: center;
+}
+.project__card a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase;
+}
+.project__card a:hover {
+  border-bottom: 2px solid #ed743d;
+  transition: 0.25s;
+  color: #ed743d;
+}
+.project__card .cta__container {
+  display: flex;
+  gap: 15px;
+}/*# sourceMappingURL=style.css.map */

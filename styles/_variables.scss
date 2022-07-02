@@ -1,0 +1,73 @@
+@mixin nav-links {
+  font-family: $font;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase;
+  &:hover {
+    border-bottom: 2px solid $primary-orange;
+    transition: 0.25s;
+    color: $primary-orange;
+  }
+}
+
+@mixin nav-links-bold {
+  font-family: $font;
+  color: $primary-orange;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase;
+  &:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.25s;
+    color: #fff;
+  }
+}
+
+@mixin paragraph-style {
+  font-family: $font;
+  line-height: 25px;
+  color: $primary-gray;
+  font-size: 1.5rem;
+  font-weight: 500;
+  @include lt-md {
+    font-size: 1.25rem;
+    line-height: 20px;
+  }
+}
+
+@mixin head-text {
+  font-family: $font;
+  text-transform: lowercase;
+  color: $primary-orange;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@mixin img-size {
+  font-family: $font;
+  max-width: 300;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@mixin card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid $primary-orange;
+  &:hover {
+    border-color: #fff;
+  }
+
+  @include lt-md {
+    padding: 10px;
+  }
+}
