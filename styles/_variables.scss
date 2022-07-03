@@ -48,6 +48,14 @@
   font-weight: 400;
 }
 
+@mixin header-text {
+  font-family: $font;
+  font-size: 4.5rem;
+  font-weight: 700;
+  @include lt-md {
+    font-size: 3.5rem;
+  }
+}
 @mixin img-size {
   font-family: $font;
   max-width: 300;
@@ -62,9 +70,9 @@
   gap: 15px;
   justify-content: space-between;
   padding: 15px;
-  border: 2px solid $primary-orange;
+  border: 2px solid #fff;
   &:hover {
-    border-color: #fff;
+    border-color: $primary-orange;
   }
 
   @include lt-md {
