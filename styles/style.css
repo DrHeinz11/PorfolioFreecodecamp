@@ -105,7 +105,9 @@ span:hover {
 }
 @media screen and (max-width: 959px) {
   .welcome-section {
-    justify-items: flex-start;
+    position: relative;
+    top: 0;
+    justify-items: center;
     grid-template-columns: 1fr;
     gap: 50px;
     margin: 0;
@@ -149,7 +151,7 @@ span:hover {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .welcome-copy .welcome-media {

@@ -82,12 +82,15 @@ span {
   margin: 0 auto;
   padding: 0 15px;
   @include lt-md {
-    justify-items: flex-start;
+    position: relative;
+    top: 0;
+    justify-items: center;
     grid-template-columns: 1fr;
     gap: 50px;
     margin: 0;
   }
-  @include lt-sm {  min-height: auto;
+  @include lt-sm {
+    min-height: auto;
     gap: 0;
   }
 }
@@ -105,7 +108,7 @@ span {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .welcome-media {
     margin-top: 10px;
