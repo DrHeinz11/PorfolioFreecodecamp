@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -306,7 +310,12 @@ span:hover {
 .projects-section .projects-article .projects-grid .btn-show-all svg {
   transform: rotate(270deg);
 }
-.projects-section .projects-article .projects-grid .btn-show-all svg #bx-down-arrow-alt {
+.projects-section
+  .projects-article
+  .projects-grid
+  .btn-show-all
+  svg
+  #bx-down-arrow-alt {
   fill: #ed743d;
   stroke: #ed743d;
 }
@@ -384,4 +393,4 @@ span:hover {
     font-size: 1.25rem;
     line-height: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
