@@ -5,6 +5,11 @@ $font: "Montserrat", sans-serif;
 
 @import "./variables";
 @import "./mediaquerys";
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -99,9 +104,9 @@ span {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .welcome-media{
-    margin-top:10px;
-    display:flex;
+  .welcome-media {
+    margin-top: 10px;
+    display: flex;
     gap: 15px;
   }
 }
@@ -155,7 +160,7 @@ span {
     }
     .about-card-container {
       display: grid;
-      gap:10px;
+      gap: 10px;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       place-content: center;
       justify-items: center;
@@ -244,5 +249,29 @@ span {
   }
   p {
     @include paragraph-style;
+  }
+}
+.contact-article {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    a {
+      display: flex;
+      align-items: center;
+      @include lt-md {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 25px;
+  p {
+    text-align: center;
   }
 }

@@ -310,12 +310,7 @@ span:hover {
 .projects-section .projects-article .projects-grid .btn-show-all svg {
   transform: rotate(270deg);
 }
-.projects-section
-  .projects-article
-  .projects-grid
-  .btn-show-all
-  svg
-  #bx-down-arrow-alt {
+.projects-section .projects-article .projects-grid .btn-show-all svg #bx-down-arrow-alt {
   fill: #ed743d;
   stroke: #ed743d;
 }
@@ -393,4 +388,31 @@ span:hover {
     font-size: 1.25rem;
     line-height: 20px;
   }
-} /*# sourceMappingURL=style.css.map */
+}
+
+.contact-article {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+.contact-article .contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.contact-article .contact-links a {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .contact-article .contact-links a {
+    flex-direction: column;
+  }
+}
+
+footer {
+  margin-top: 25px;
+}
+footer p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
