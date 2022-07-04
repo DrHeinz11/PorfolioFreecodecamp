@@ -258,6 +258,8 @@ span {
   }
 }
 .contact-article {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   gap: 25px;
   flex-direction: column;
@@ -271,6 +273,11 @@ span {
       @include lt-md {
         flex-direction: column;
       }
+    }
+  }
+  .contact-section-header{
+    p{
+      margin-top: 10px;
     }
   }
 }
