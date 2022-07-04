@@ -149,7 +149,7 @@ span:hover {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .welcome-copy .welcome-media {
