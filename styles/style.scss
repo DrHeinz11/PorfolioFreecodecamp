@@ -87,7 +87,7 @@ span {
     gap: 50px;
     margin: 0;
   }
-  @include lt-sm {
+  @include lt-sm {  min-height: auto;
     gap: 0;
   }
 }
