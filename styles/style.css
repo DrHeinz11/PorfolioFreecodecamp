@@ -142,6 +142,11 @@ span:hover {
     justify-content: flex-start;
   }
 }
+.welcome-copy .welcome-media {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
 
 .figure__container {
   display: flex;
