@@ -34,6 +34,15 @@ main {
   }
 }
 
+span {
+  color: $primary-orange;
+  border-bottom: 3px solid transparent;
+  &:hover{
+    transition:1s;
+    border-color: $primary-orange;
+  }
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -112,9 +121,28 @@ main {
     }
   }
 }
-
+.about-section {
+  padding: 150px 15px 0 15px;
+  min-height: 100vh;
+  .about-article {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(2, 50vh);
+    h2 {
+      @include header-text;
+    }
+    p {
+      @include subhead-text;
+    }
+    .about-card-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
 .projects-section {
-  padding: 150px 0 0 0;
+  padding: 0 15px;
   min-height: 150vh;
   .projects-article {
     display: flex;
@@ -123,9 +151,6 @@ main {
     margin: 0 auto;
     .projects-section-header {
       @include header-text;
-      span {
-        color: $primary-orange;
-      }
     }
     .projects-grid {
       display: grid;

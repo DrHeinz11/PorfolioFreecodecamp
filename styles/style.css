@@ -34,6 +34,15 @@ main {
   }
 }
 
+span {
+  color: #ed743d;
+  border-bottom: 3px solid transparent;
+}
+span:hover {
+  transition: 1s;
+  border-color: #ed743d;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -120,6 +129,11 @@ main {
   font-size: 2.25rem;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 959px) {
+  .welcome-copy p {
+    font-size: 1.5rem;
+  }
+}
 
 .figure__container {
   display: flex;
@@ -150,12 +164,53 @@ main {
   font-size: 2.25rem;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 959px) {
+  .figure__container figcaption {
+    font-size: 1.5rem;
+  }
+}
 .figure__container figcaption img {
   max-width: 88px;
 }
 
+.about-section {
+  padding: 150px 15px 0 15px;
+  min-height: 100vh;
+}
+.about-section .about-article {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(2, 50vh);
+}
+.about-section .about-article h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 959px) {
+  .about-section .about-article h2 {
+    font-size: 3.5rem;
+  }
+}
+.about-section .about-article p {
+  color: #efefef;
+  text-transform: capitalize;
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 959px) {
+  .about-section .about-article p {
+    font-size: 1.5rem;
+  }
+}
+.about-section .about-article .about-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .projects-section {
-  padding: 150px 0 0 0;
+  padding: 0 15px;
   min-height: 150vh;
 }
 .projects-section .projects-article {
@@ -173,9 +228,6 @@ main {
   .projects-section .projects-article .projects-section-header {
     font-size: 3.5rem;
   }
-}
-.projects-section .projects-article .projects-section-header span {
-  color: #ed743d;
 }
 .projects-section .projects-article .projects-grid {
   display: grid;
