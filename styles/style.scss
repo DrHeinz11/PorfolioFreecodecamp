@@ -37,8 +37,8 @@ main {
 span {
   color: $primary-orange;
   border-bottom: 3px solid transparent;
-  &:hover{
-    transition:1s;
+  &:hover {
+    transition: 1s;
     border-color: $primary-orange;
   }
 }
@@ -93,6 +93,12 @@ span {
   p {
     @include subhead-text;
   }
+  @include lt-sm {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .figure__container {
   display: flex;
@@ -118,26 +124,44 @@ span {
     @include subhead-text;
     img {
       max-width: 88px;
+      @include lt-md {
+        max-width: 48px;
+      }
     }
   }
 }
 .about-section {
   padding: 150px 15px 0 15px;
-  min-height: 100vh;
+  min-height: 75vh;
+  @include lt-md {
+    padding: 15px 10px;
+  }
   .about-article {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(2, 50vh);
+    gap: 15px;
+    grid-template-rows: max-content, 1fr;
     h2 {
       @include header-text;
     }
     p {
-      @include subhead-text;
+      @include paragraph-style;
     }
     .about-card-container {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      gap:10px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      place-content: center;
+      justify-items: center;
+      .about-card {
+        display: flex;
+        align-items: center;
+        @include lt-md {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
     }
   }
 }
@@ -206,5 +230,14 @@ span {
   .cta__container {
     display: flex;
     gap: 15px;
+  }
+}
+
+.contact-section-header {
+  h2 {
+    @include header-text;
+  }
+  p {
+    @include paragraph-style;
   }
 }
