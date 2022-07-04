@@ -87,6 +87,9 @@ span {
     gap: 50px;
     margin: 0;
   }
+  @include lt-sm {
+    gap: 0;
+  }
 }
 .welcome-copy {
   h1 {
@@ -102,7 +105,7 @@ span {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .welcome-media {
     margin-top: 10px;
